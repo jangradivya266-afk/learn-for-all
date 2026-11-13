@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn for All – Free Public Learning Resources</title>
+  <meta name="description" content="Free educational resource directory for students and the public. Learn Commerce, English, Computers, School subjects, and Digital Skills without spending money on expensive courses.">
+  <meta name="keywords" content="Free education, NCU CDOE B.Com, Commerce, SWAYAM, NPTEL, Khan Academy, NCERT, ePathshala, Microsoft Learn, English learning, Computer literacy">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="Learn for All Homepage">
+        <div class="brand-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-title">Learn for All</span>
+          <span class="brand-tagline-sub">Education Should Be Free for Everyone.</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav id="navMenu" class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#categories" class="nav-link">Subjects</a>
+        <a href="#resourcesSection" class="nav-link">Free Courses</a>
+        <a href="#studyMaterials" class="nav-link">Study Materials</a>
+        <a href="#videos" class="nav-link">Videos</a>
+        <a href="#quizzes" class="nav-link">Quizzes</a>
+        <a href="#awareness" class="nav-link">Digital Awareness</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="adminNavBtn" class="nav-link btn-purple" onclick="openAdminModal()">
+          🔒 Admin Login
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileToggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         HERO SECTION
+         ======================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <span>🎓</span> NCU CDOE B.Com Online Community Service Project
+          </div>
+          <h1 class="hero-title">
+            Learn Something New. <br>
+            <span class="hero-highlight">Every Day. For Free.</span>
+          </h1>
+          <p class="hero-description">
+            Access hundreds of verified, high-quality public educational resources curated from Khan Academy, SWAYAM, NPTEL, DIKSHA, NCERT, and Microsoft Learn. Empower yourself with skills and knowledge without spending a single rupee on costly courses.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#resourcesSection" class="btn btn-primary">
+              <span>Explore Free Resources</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#studyMaterials" class="btn btn-secondary">
+              <span>Read Study Guides</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span id="statResourceCount" class="stat-number">25+</span>
+              <span class="stat-label">Verified Courses & Guides</span>
+            </div>
+            <div class="stat-item">
+              <span id="statCategoryCount" class="stat-number">5</span>
+              <span class="stat-label">Key Learning Domains</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Free Public Access</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Preview Card -->
+        <div class="hero-visual-wrap">
+          <div class="hero-floating-card">
+            <div class="floating-card-header">
+              <div>
+                <span class="pulse-dot"></span>
+                <strong style="font-size: 0.95rem;">Curated Open Education</strong>
+              </div>
+              <span class="badge badge-green">Always Free</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+              Direct links to official Government of India and global non-profit educational platforms.
+            </p>
+
+            <div class="hero-preview-list">
+              <div class="hero-preview-item">
+                <div class="preview-icon" style="background: #2563eb;">💼</div>
+                <div>
+                  <strong style="font-size: 0.9rem; display: block;">Commerce & Accounting</strong>
+                  <span style="font-size: 0.78rem; color: var(--text-muted);">IIT Bombay & NCERT certified curricula</span>
+                </div>
+              </div>
+              <div class="hero-preview-item">
+                <div class="preview-icon" style="background: #7c3aed;">📖</div>
+                <div>
+                  <strong style="font-size: 0.9rem; display: block;">Spoken English & Grammar</strong>
+                  <span style="font-size: 0.78rem; color: var(--text-muted);">Khan Academy & NPTEL communication skills</span>
+                </div>
+              </div>
+              <div class="hero-preview-item">
+                <div class="preview-icon" style="background: #0284c7;">💻</div>
+                <div>
+                  <strong style="font-size: 0.9rem; display: block;">Computer & Excel Basics</strong>
+                  <span style="font-size: 0.78rem; color: var(--text-muted);">Microsoft Learn interactive tutorials</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SEARCH & FILTER BAR
+         ======================================================================== -->
+    <section class="search-filter-section">
+      <div class="container">
+        <div class="search-filter-card">
+          <div class="search-box-row">
+            <div class="search-input-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="resourceSearchInput" class="search-input" placeholder="Search resources (e.g. Accounting, Excel, Python, GST, Grammar)..." aria-label="Search resources">
+              <button id="searchClearBtn" class="search-clear-btn" aria-label="Clear search">✕</button>
+            </div>
+
+            <select id="platformFilterSelect" class="filter-select" aria-label="Filter by learning platform">
+              <option value="all">All Free Platforms</option>
+              <option value="SWAYAM">SWAYAM / NPTEL</option>
+              <option value="Khan Academy">Khan Academy</option>
+              <option value="NCERT">NCERT Official</option>
+              <option value="DIKSHA">DIKSHA Portal</option>
+              <option value="ePathshala">ePathshala</option>
+              <option value="Microsoft">Microsoft Learn</option>
+              <option value="YouTube">YouTube Educational</option>
+            </select>
+          </div>
+
+          <!-- Dynamic Category Pills -->
+          <div id="categoryPillsContainer" class="category-pills-row"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         LEARNING CATEGORIES (SUBJECTS)
+         ======================================================================== -->
+    <section id="categories" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Learning Pathways</span>
+          <h2 class="section-title">Explore by Subject</h2>
+          <p class="section-desc">Comprehensive subjects structured for school students, college learners, and lifelong self-taught individuals.</p>
+        </div>
+
+        <div id="categoriesGrid" class="categories-grid"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         MAIN FREE COURSES & RESOURCES DIRECTORY
+         ======================================================================== -->
+    <section id="resourcesSection" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Free Public Directory</span>
+          <h2 class="section-title">Verified Educational Resources</h2>
+          <p id="resourceResultCount" class="section-desc">Showing verified educational resources</p>
+        </div>
+
+        <div id="resourcesGrid" class="resources-grid"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         STUDY MATERIALS & TOPIC GUIDES
+         ======================================================================== -->
+    <section id="studyMaterials" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Study Notes & Materials</span>
+          <h2 class="section-title">Original Topic-Wise Revision Guides</h2>
+          <p class="section-desc">Quick-reference revision notes, formulas, frameworks, and official curriculum textbook links.</p>
+        </div>
+
+        <div id="studyGuidesGrid" class="study-guides-grid"></div>
+
+        <!-- Official Free E-Book Portals Notice -->
+        <div style="margin-top: 2.5rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-lg); padding: 1.75rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div style="max-width: 720px;">
+            <h4 style="color: var(--primary-blue); font-size: 1.15rem; margin-bottom: 0.35rem;">Need Complete School Textbooks in PDF?</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              You can legally download 100% free official textbooks for Classes 1 to 12 directly from the Government of India NCERT and ePathshala portals without registration.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="https://ncert.nic.in/textbook.php" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">NCERT Textbooks ↗</a>
+            <a href="https://epathshala.nic.in/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">ePathshala Portal ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         POPULAR FREE LEARNING PLATFORMS
+         ======================================================================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trusted Sources</span>
+          <h2 class="section-title">Major Free Learning Platforms</h2>
+          <p class="section-desc">Government initiatives, open university archives, and premier non-profit learning organizations.</p>
+        </div>
+
+        <div id="platformsGrid" class="platforms-grid"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         VIDEO LEARNING SECTION
+         ======================================================================== -->
+    <section id="videos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Visual Learning</span>
+          <h2 class="section-title">Curated Educational Video Tutorials</h2>
+          <p class="section-desc">High-quality video lectures and demonstrations to reinforce your conceptual understanding.</p>
+        </div>
+
+        <div id="videosGrid" class="videos-grid"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         INTERACTIVE QUIZZES
+         ======================================================================== -->
+    <section id="quizzes" class="section quiz-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Self-Assessment</span>
+          <h2 class="section-title">Interactive Knowledge Quizzes</h2>
+          <p class="section-desc">Test your understanding with instant feedback, clear explanations, and final scoring.</p>
+        </div>
+
+        <!-- Quiz Category Selector Tabs -->
+        <div id="quizTabsContainer" class="quiz-tabs-row"></div>
+
+        <!-- Quiz Main Box -->
+        <div class="quiz-container-box">
+          <!-- Active Question Screen -->
+          <div id="quizActiveView">
+            <div class="quiz-header-bar">
+              <span id="quizProgressText" class="quiz-progress-text">Question 1 of 5</span>
+              <span id="quizScorePill" class="quiz-score-pill">Score: 0 / 5</span>
+            </div>
+
+            <h3 id="quizQuestionPrompt" class="quiz-question-prompt">Loading question...</h3>
+
+            <!-- Options List -->
+            <div id="quizOptionsList" class="quiz-options-list"></div>
+
+            <!-- Detailed Explanation Box -->
+            <div id="quizExplanationBox" class="quiz-explanation-box"></div>
+
+            <!-- Quiz Controls -->
+            <div class="quiz-action-row">
+              <button id="quizSubmitBtn" class="btn btn-primary" onclick="submitQuizAnswer()" disabled>
+                <span>Submit Answer</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </button>
+
+              <button id="quizNextBtn" class="btn btn-purple" onclick="nextQuizQuestion()" style="display: none;">
+                <span>Next Question →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Completed / Score Screen -->
+          <div id="quizResultView" class="quiz-result-view">
+            <div class="result-trophy-wrap">🏆</div>
+            <h3 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Quiz Completed!</h3>
+            <div id="resultScoreBig" class="result-score-big">5 / 5 (100%)</div>
+            <p id="resultMessage" class="result-message">Great job! You have demonstrated great conceptual clarity.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+              <button class="btn btn-primary" onclick="retryQuiz()">🔄 Try Quiz Again</button>
+              <a href="#resourcesSection" class="btn btn-secondary">Explore More Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         DIGITAL AWARENESS & INTERNET SAFETY
+         ======================================================================== -->
+    <section id="awareness" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Cyber Defense for Everyone</span>
+          <h2 class="section-title">Digital Awareness & Online Safety</h2>
+          <p class="section-desc">Practical, beginner-friendly rules to defend yourself and your family against cyber scams and financial fraud.</p>
+        </div>
+
+        <div id="awarenessGrid" class="awareness-grid"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         MOTIVATIONAL MESSAGE BANNER
+         ======================================================================== -->
+    <section class="section" style="background: linear-gradient(135deg, #1e40af, #6d28d9); color: white; text-align: center; padding: 4.5rem 1.5rem;">
+      <div class="container" style="max-width: 800px;">
+        <span style="font-size: 2.5rem; display: inline-block; margin-bottom: 1rem;">🌱</span>
+        <h2 style="color: white; font-size: 2.35rem; margin-bottom: 1rem; font-weight: 800;">
+          "The beautiful thing about learning is that no one can take it away from you."
+        </h2>
+        <p style="color: #ddd6fe; font-size: 1.15rem; margin-bottom: 2rem;">
+          Whether you want to understand financial balance sheets, master English fluency, or learn computer coding, the internet holds unlimited free knowledge. All you need is curiosity and consistency.
+        </p>
+        <a href="#resourcesSection" class="btn btn-secondary" style="background: white; color: var(--primary-blue);">Start Learning Today</a>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ABOUT US SECTION
+         ======================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-hero-box">
+          <span class="project-affiliation-badge">
+            🏛️ NCU CDOE B.Com Online Community Service Project
+          </span>
+          <h2 style="margin-top: 1.25rem;">About Learn for All</h2>
+          <blockquote class="about-quote">
+            "Learn for All is an independent online community education initiative created to make free learning opportunities accessible to everyone. Our mission is to encourage education, digital literacy and skill development by bringing useful educational resources together in one place. We believe that everyone deserves an opportunity to learn and grow."
+          </blockquote>
+          <p style="color: #e0e7ff; font-size: 0.95rem; line-height: 1.6;">
+            This initiative is developed as part of our academic community service curriculum. We do not charge fees, run commercial advertisements, or sell student information. Our objective is to bridge the educational divide by making certified public learning platforms easily discoverable.
+          </p>
+        </div>
+
+        <div class="about-pillars-grid">
+          <div class="about-pillar-card">
+            <h3><span>🆓</span> 100% Free Access</h3>
+            <p>Education must never be blocked by high price tags. We exclusively catalogue open-access resources, free government portals, and non-profit educational platforms.</p>
+          </div>
+          <div class="about-pillar-card">
+            <h3><span>🛡️</span> Zero Commercial Affiliation</h3>
+            <p>This project is purely educational and non-commercial. We maintain no paid partnerships, sponsors, or affiliate commissions with any external portal.</p>
+          </div>
+          <div class="about-pillar-card">
+            <h3><span>💡</span> Digital Literacy Mission</h3>
+            <p>Beyond academic theory, our initiative promotes digital safety, banking cyber security, and basic computing skills so every citizen can safely benefit from technology.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CONTACT & FEEDBACK SECTION
+         ======================================================================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Community Suggestions</span>
+          <h2 class="section-title">Contact & Community Feedback</h2>
+          <p class="section-desc">Have a suggestion for a great free educational resource? Let us know!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Community Education Desk</h3>
+            <p style="margin-bottom: 1.5rem;">
+              We welcome ideas from students, teachers, and community members to expand this free repository.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
+              <div style="display: flex; gap: 0.75rem;">
+                <span style="font-size: 1.25rem;">📍</span>
+                <div>
+                  <strong style="font-size: 0.9rem; display: block;">Initiative Type</strong>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);">NCU CDOE B.Com Online Community Service Project</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 0.75rem;">
+                <span style="font-size: 1.25rem;">🌐</span>
+                <div>
+                  <strong style="font-size: 0.9rem; display: block;">Service Scope</strong>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);">Open public resource curation & digital awareness</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-disclaimer">
+              <strong>Notice:</strong> This website is an independent community project and does not offer official admissions, paid certifications, or university degrees.
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="feedbackForm">
+              <div class="form-group">
+                <label for="fbName" class="form-label">Your Name (Optional)</label>
+                <input type="text" id="fbName" class="form-control" placeholder="e.g. Ramesh Kumar">
+              </div>
+
+              <div class="form-group">
+                <label for="fbEmail" class="form-label">Email Address (Optional)</label>
+                <input type="email" id="fbEmail" class="form-control" placeholder="e.g. ramesh@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="fbSuggestion" class="form-label">Resource Suggestion or Category</label>
+                <input type="text" id="fbSuggestion" class="form-control" placeholder="e.g. Recommend a free GST tutorial or Computer guide">
+              </div>
+
+              <div class="form-group">
+                <label for="fbMessage" class="form-label">Your Message / Feedback *</label>
+                <textarea id="fbMessage" class="form-control" required placeholder="Share your suggestions, recommendations, or questions with our student team..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Submit Community Feedback
+              </button>
+
+              <div class="form-disclaimer" style="margin-top: 1rem;">
+                ℹ️ <strong>Demonstration Note:</strong> This form demonstrates client-side submission for our academic community project. Submissions display an instant confirmation toast and are saved in local memory.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.75rem;">
+            <div style="width: 32px; height: 32px; border-radius: 8px; background: linear-gradient(135deg, #2563eb, #7c3aed); display: flex; align-items: center; justify-content: center; color: white;">
+              🎓
+            </div>
+            <span style="font-size: 1.25rem; font-weight: 800; color: white;">Learn for All</span>
+          </div>
+          <p class="footer-tagline">
+            "Education Should Be Free for Everyone."
+          </p>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5;">
+            An independent online community education initiative created to make free learning opportunities accessible to everyone. Developed for the NCU CDOE B.Com Online Community Service Project.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Learning Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="#resourcesSection" onclick="selectCategoryFilter('commerce')">Commerce & Business</a></li>
+            <li><a href="#resourcesSection" onclick="selectCategoryFilter('english')">English Learning</a></li>
+            <li><a href="#resourcesSection" onclick="selectCategoryFilter('computer')">Computer Education</a></li>
+            <li><a href="#resourcesSection" onclick="selectCategoryFilter('school')">School Education</a></li>
+            <li><a href="#resourcesSection" onclick="selectCategoryFilter('digital')">Digital Skills</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Free Platforms</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://swayam.gov.in" target="_blank" rel="noopener">SWAYAM Portal</a></li>
+            <li><a href="https://nptel.ac.in" target="_blank" rel="noopener">NPTEL Courses</a></li>
+            <li><a href="https://www.khanacademy.org" target="_blank" rel="noopener">Khan Academy</a></li>
+            <li><a href="https://ncert.nic.in" target="_blank" rel="noopener">NCERT Textbooks</a></li>
+            <li><a href="https://diksha.gov.in" target="_blank" rel="noopener">DIKSHA Portal</a></li>
+            <li><a href="https://learn.microsoft.com" target="_blank" rel="noopener">Microsoft Learn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic & Legal</h4>
+          <div class="footer-disclaimer-card">
+            <strong>Educational Disclaimer:</strong> Learn for All is an independent educational resource directory and is not affiliated with, endorsed by, or partnered with the external platforms listed. All course names, logos, and trademarks belong to their respective owners.
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="#about" style="color: #cbd5e1; font-size: 0.85rem; text-decoration: underline;">Community Project Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Learn for All • Community Service Initiative • Non-Commercial Educational Platform
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#home" style="color: #64748b;">Back to Top ↑</a>
+          <button onclick="openAdminModal()" style="background: none; border: none; color: #64748b; cursor: pointer; font-size: 0.84rem;">Admin Panel</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODALS
+       ======================================================================== -->
+
+  <!-- 1. Study Guide Reader Modal -->
+  <div id="studyGuideModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="studyGuideModalTitle">
+    <div class="modal-content-card">
+      <div class="modal-header">
+        <h3 id="studyGuideModalTitle" class="modal-title">Study Guide Reader</h3>
+        <button class="modal-close-btn" onclick="closeAllModals()" aria-label="Close modal">✕</button>
+      </div>
+      <div id="studyGuideModalBody" class="modal-body">
+        <!-- Markdown content rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Video Player Modal -->
+  <div id="videoPlayerModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+    <div class="modal-content-card" style="max-width: 820px;">
+      <div class="modal-header">
+        <h3 id="videoModalTitle" class="modal-title">Video Lesson</h3>
+        <button class="modal-close-btn" onclick="closeAllModals()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-video-wrapper">
+        <iframe id="videoModalIframe" src="" title="Educational Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div style="padding: 1rem 1.5rem;">
+        <p id="videoModalDesc" style="font-size: 0.9rem; color: var(--text-muted);"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Admin Login Modal -->
+  <div id="adminLoginModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-content-card" style="max-width: 440px;">
+      <div class="modal-header">
+        <h3 class="modal-title">🔒 Admin Authentication</h3>
+        <button class="modal-close-btn" onclick="closeAllModals()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          Enter the administrator password to manage resources, add new study materials, and export backups.
+        </p>
+        <form onsubmit="handleAdminLogin(event)">
+          <div class="form-group">
+            <label for="adminPasswordInput" class="form-label">Admin Password</label>
+            <input type="password" id="adminPasswordInput" class="form-control" placeholder="Enter password (default: learnforall2026)" required autofocus>
+          </div>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+            <button type="submit" class="btn btn-primary" style="flex-grow: 1;">Unlock Admin Panel</button>
+            <button type="button" class="btn btn-secondary" onclick="closeAllModals()">Cancel</button>
+          </div>
+          <p style="font-size: 0.78rem; color: var(--text-light); margin-top: 1rem; text-align: center;">
+            Default password: <code>learnforall2026</code>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Admin Dashboard Modal -->
+  <div id="adminDashboardModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-content-card" style="max-width: 950px; max-height: 94vh;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <h3 class="modal-title">⚙️ Admin Resource Dashboard</h3>
+          <span class="admin-badge-indicator">Authenticated</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button class="btn btn-secondary btn-sm" onclick="handleAdminLogout()">Logout</button>
+          <button class="modal-close-btn" onclick="closeAllModals()" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Admin Action Toolbar -->
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem;">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-sm" onclick="openAddResourceModal()">
+              ➕ Add New Resource
+            </button>
+            <button class="btn btn-secondary btn-sm" onclick="exportResourcesJSON()">
+              💾 Export JSON Backup
+            </button>
+            <label class="btn btn-secondary btn-sm" style="margin: 0; cursor: pointer;">
+              📂 Import JSON
+              <input type="file" accept=".json" style="display: none;" onchange="importResourcesJSON(event)">
+            </label>
+            <button class="btn btn-secondary btn-sm" style="color: var(--accent-rose);" onclick="resetDefaultResources()">
+              ↺ Reset to Defaults
+            </button>
+          </div>
+        </div>
+
+        <!-- Explanatory Persistence Banner -->
+        <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-md); padding: 0.85rem 1rem; font-size: 0.84rem; color: #1e40af; margin-bottom: 1.25rem;">
+          <strong>ℹ️ Data Storage Notice:</strong> Added and edited resources are safely saved in your browser's local memory (LocalStorage). To keep a permanent copy or transfer your resources to another computer, use <strong>"Export JSON Backup"</strong>.
+        </div>
+
+        <!-- Resources Table -->
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Resource Title</th>
+                <th>Category</th>
+                <th>Platform</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="adminResourceTableBody">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Add / Edit Resource Modal -->
+  <div id="resourceFormModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-content-card" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3 id="resourceFormModalTitle" class="modal-title">Add New Educational Resource</h3>
+        <button class="modal-close-btn" onclick="closeResourceFormModal()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="resourceForm" onsubmit="saveResourceForm(event)">
+          <input type="hidden" id="editResourceId">
+
+          <div class="form-group">
+            <label for="formResTitle" class="form-label">Resource Title *</label>
+            <input type="text" id="formResTitle" class="form-control" required placeholder="e.g. Financial Accounting by IIT Bombay">
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="formResCategory" class="form-label">Category *</label>
+              <select id="formResCategory" class="form-control" required>
+                <option value="commerce">Commerce & Business</option>
+                <option value="english">English Learning</option>
+                <option value="computer">Computer Education</option>
+                <option value="school">School Education</option>
+                <option value="digital">Digital Skills</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="formResSubcategory" class="form-label">Subcategory / Topic *</label>
+              <input type="text" id="formResSubcategory" class="form-control" required placeholder="e.g. Financial Accounting">
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="formResPlatform" class="form-label">Platform Name *</label>
+              <input type="text" id="formResPlatform" class="form-control" required placeholder="e.g. NPTEL / SWAYAM / Khan Academy">
+            </div>
+
+            <div class="form-group">
+              <label for="formResPricing" class="form-label">Pricing Status *</label>
+              <select id="formResPricing" class="form-control" required>
+                <option value="100% Free to Access">100% Free to Access</option>
+                <option value="100% Free Official PDF">100% Free Official PDF</option>
+                <option value="100% Free Video Course">100% Free Video Course</option>
+                <option value="Free (Optional Certificate Fee)">Free (Optional Certificate Fee)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="formResUrl" class="form-label">Direct Resource URL *</label>
+            <input type="url" id="formResUrl" class="form-control" required placeholder="https://...">
+          </div>
+
+          <div class="form-group">
+            <label for="formResVideoUrl" class="form-label">YouTube Video / Embed URL (Optional)</label>
+            <input type="url" id="formResVideoUrl" class="form-control" placeholder="https://www.youtube.com/embed/...">
+          </div>
+
+          <div class="form-group">
+            <label for="formResDesc" class="form-label">Short Description *</label>
+            <textarea id="formResDesc" class="form-control" rows="3" required placeholder="Explain what students will learn from this resource..."></textarea>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+            <button type="submit" class="btn btn-primary" style="flex-grow: 1;">Save Resource</button>
+            <button type="button" class="btn btn-secondary" onclick="closeResourceFormModal()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
